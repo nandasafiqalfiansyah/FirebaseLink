@@ -1,0 +1,102 @@
+<!-- PEMBUAT NANDA SAFIQ ALFIANSYAH -->
+<!-- NOTING IMPOSIBLE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Sensor Suhu & Kelembapan by nanda</title>
+</head>
+
+<body>
+
+
+    <form id="config-form">
+        <h1>Set Firebase Config</h1>
+        <label for="apiKey">API Key (wajib):</label>
+        <input type="text" id="apiKey" required><br>
+
+        <label for="authDomain">Auth Domain:</label>
+        <input type="text" id="authDomain" required><br>
+
+        <label for="databaseURL">Database URL (wajib):</label>
+        <input type="text" id="databaseURL" required><br>
+
+        <label for="projectId">Project ID:</label>
+        <input type="text" id="projectId" required><br>
+
+        <label for="storageBucket">Storage Bucket:</label>
+        <input type="text" id="storageBucket" required><br>
+
+        <label for="messagingSenderId">Messaging Sender ID:</label>
+        <input type="text" id="messagingSenderId" required><br>
+
+        <label for="appId">App ID:</label>
+        <input type="text" id="appId" required><br>
+
+        <button type="submit">Set Config</button>
+        <button id="delete-button">Hapus Konfigurasi</button>
+    </form>
+
+    <hr />
+
+    <!-- Grafik -->
+    <h3>Grafik Hasil pembacaan suhu dan kelembapan</h3>
+
+    <div class="chart-container">
+        <canvas id="chart" class="chart-enter" width="400" height="400"></canvas>
+    </div>
+
+    <div class="container">
+        <h1>Sensor Suhu & Kelembapan</h1>
+
+        <h2>Suhu: <span id="suhu"></span></h2>
+        <h2>Kelembapan: <span id="kelembapan"></span></h2>
+
+        <button id="btn-toggle" class="btn-toggle" onclick="toggleRelay()">Toggle Relay</button>
+
+    </div>
+
+    <div class="chat-container container">
+        <h3>Diskusi LIVE CHAT </h3>
+
+        <div id="chat-messages" class="chat-messages"></div>
+        <form id="chat-form" class="chat-form">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Type a message...">
+            <button type="submit" class="chat-send">Send</button>
+
+
+        </form>
+        <button id="delete-message-button" class="chat-delete">Hapus Pesan</button>
+    </div>
+
+    <!-- Notifikasi -->
+    <div id="notification" class="notification"></div>
+
+    <footer class="footer">
+        <p>Created by Nanda Safiq Alfiansyah</p>
+        <p><a href="https://github.com/nandasafiqalfiansyah">👾GitHub👾</a></p>
+    </footer>
+
+    <!-- firebse wajib -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <!-- firebase pilihan -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <!-- grafik -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="./scipts/firebase-config.js"></script>
+
+</body>
+
+</html>
