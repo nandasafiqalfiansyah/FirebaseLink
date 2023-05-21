@@ -221,15 +221,6 @@ configForm.addEventListener("submit", function (e) {
     firebase.database().ref("chat").remove();
   });
 
-  // // Mengosongkan inputan setelah konfigurasi di set
-  // apiKeyInput.value = "";
-  // authDomainInput.value = "";
-  // databaseURLInput.value = "";
-  // projectIdInput.value = "";
-  // storageBucketInput.value = "";
-  // messagingSenderIdInput.value = "";
-  // appIdInput.value = "";
-
   alert("Konfigurasi Firebase berhasil di set!");
 });
 
