@@ -69,8 +69,6 @@ Contributions to this project are welcome. If you have any suggestions, improvem
 License
 This project is licensed under the MIT License.
 
-Feel free to modify the contents based on your project's specifics, and make sure to include any additional sections or information that may be relevant.
-
 ```
-
+Feel free to modify the contents based on your project's specifics, and make sure to include any additional sections or information that may be relevant.
 ```
