@@ -1,4 +1,4 @@
-# NodeMCU DHT11 Firebase
+# FirebaseLink
 
 This project enables you to build a temperature and humidity monitoring system using NodeMCU, DHT11 sensor, and Firebase. With this setup, you can remotely monitor real-time temperature and humidity data through the Firebase real-time database.
 
@@ -8,7 +8,6 @@ The NodeMCU DHT11 Firebase project allows you to gather temperature and humidity
 
 ## Features
 
-- Read temperature and humidity data from DHT11 sensor
 - Send data to Firebase real-time database
 - Remotely monitor temperature and humidity readings
 - User-friendly web interface
@@ -17,9 +16,6 @@ The NodeMCU DHT11 Firebase project allows you to gather temperature and humidity
 
 Before using this project, make sure you have the following:
 
-- NodeMCU board
-- DHT11 sensor
-- Arduino IDE
 - Firebase account
 
 ## Installation
@@ -29,7 +25,6 @@ Before using this project, make sure you have the following:
 3. Open the Arduino IDE.
 4. Install the necessary libraries:
    - ESP8266WiFi
-   - DHT
    - FirebaseESP8266
 5. Set up your Firebase account and create a real-time database.
 6. Update the Firebase credentials in the code with your own.
